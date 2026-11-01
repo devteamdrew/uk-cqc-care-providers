@@ -1,0 +1,11 @@
+{
+  "serviceTypes": [
+    "Residential homes",
+    "Nursing homes"
+  ],
+  "regions": [
+    "North West"
+  ],
+  "requirePhone": true,
+  "maxItems": 20
+}
