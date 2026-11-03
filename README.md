@@ -1,6 +1,6 @@
 # CQC Care Homes & Providers Scraper – UK Care Directory Leads
 
-Export CQC-registered care homes, nursing homes, home care agencies, GP surgeries, dentists and clinics in England with phone number, website, address, services, specialisms and date of last CQC check. Filter by service type, region, council or postcode. Official CQC data, no key. Pay per result.
+Export CQC-registered care homes, nursing homes, home care agencies, GP surgeries, dentists and clinics in England with phone number, website, address, services, specialisms, CQC rating (overall + safe/effective/caring/responsive/well-led) and date of last check. Filter by service type, region, council, postcode or minimum rating. Official CQC data, no key. Pay per result.
 
 **[Run it on Apify →](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=hero)** (pay per result, free Apify account to start)
 
@@ -61,10 +61,13 @@ Example input ([examples/input.json](examples/input.json)):
 Everything registered with CQC in England: care homes, nursing homes, home care, supported living, GPs, dentists, clinics, hospitals and more.
 
 **Does it include CQC ratings?**
-Not yet: it includes the date of the latest CQC check and a link to the CQC page with the full report. Ratings are on the roadmap.
+Yes. By default each location gets `overallRating`, `ratingSafe`, `ratingEffective`, `ratingCaring`, `ratingResponsive`, `ratingWellLed` and `ratingPublishedDate` from CQC's monthly Latest ratings file (`ratingsDate` shows its version). Filter with `minRating` (e.g. Good = Good or Outstanding) or `onlyRated`. Locations that have never been rated have null ratings.
+
+**Why do some ratings say Not applicable or Not rated?**
+Those values come straight from CQC, e.g. locations offering several service types no longer get a single location-level rating under CQC's newer approach.
 
 **How fresh is it?**
-CQC republishes the directory regularly; `directoryDate` shows the version used.
+CQC republishes the directory regularly and the ratings file monthly; `directoryDate` and `ratingsDate` show the versions used.
 
 ## Use with AI agents (MCP)
 
@@ -76,7 +79,7 @@ See the [Apify Store page](https://apify.com/devteamdrew/uk-cqc-care-providers?u
 
 ## Sample data
 
-Browse real sample rows, download a free CSV sample and see ready-made feeds at [rowsift.co.uk](https://rowsift.co.uk/?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=sample-data).
+Browse real sample rows, download a free CSV sample and see ready-made feeds at [rowsift.co.uk](https://rowsift.co.uk/care-providers/?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=sample-data).
 
 ## More data actors
 
