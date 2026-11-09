@@ -1,6 +1,6 @@
-# CQC Care Homes & Providers Scraper – UK Care Directory Leads
+# CQC Care Homes & Providers Scraper – Ratings & UK Care Leads
 
-Export CQC-registered care homes, nursing homes, home care agencies, GP surgeries, dentists and clinics in England with phone number, website, address, services, specialisms, CQC rating (overall + safe/effective/caring/responsive/well-led) and date of last check. Filter by service type, region, council, postcode or minimum rating. Official CQC data, no key. Pay per result.
+Export CQC-registered care homes, nursing homes, home care, GPs and dentists in England with phone, website, address, services, specialisms and CQC ratings (overall + five key questions). Filter by type, region, council, postcode or min rating. Official CQC data, no key. Pay per result.
 
 **[Run it on Apify →](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=hero)** (pay per result, free Apify account to start)
 
@@ -94,6 +94,9 @@ Browse real sample rows, download a free CSV sample and see ready-made feeds at 
 - [SEC EDGAR Scraper – 10-K, 10-Q & 8-K Filings](https://apify.com/devteamdrew/sec-edgar-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
 - [arXiv Scraper – Paper Search, Abstracts & Authors](https://apify.com/devteamdrew/arxiv-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
 - [UK Public Tenders Scraper – Contracts Finder & Find a Tender](https://apify.com/devteamdrew/uk-public-tenders?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
+- [SAM.gov Contract Opportunities Scraper – US Federal Tenders](https://apify.com/devteamdrew/sam-gov-opportunities?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
+- [UK Operator Licence Scraper – HGV & Bus Operators (DVSA VOL)](https://apify.com/devteamdrew/uk-operator-licences?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
+- [USAspending Federal Awards Scraper – Contracts & Grants](https://apify.com/devteamdrew/usaspending-awards?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
 
 ## License
 
