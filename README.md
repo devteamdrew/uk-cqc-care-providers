@@ -2,7 +2,7 @@
 
 UK CQC care homes scraper: export care homes, nursing homes, home care, GPs and dentists in England with phone, website, address, services, specialisms and CQC ratings (overall + five key questions). Filter by type, region, council, postcode or min rating. Official CQC data, no key. Pay per result.
 
-**[Run it on Apify →](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=hero)** (pay per result, free Apify account to start)
+**[Run it on Apify →](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)** (pay per result, free Apify account to start)
 
 
 **UK CQC Care Providers Scraper** by Moxie: fast, reliable and polite, built on official/public data sources.
@@ -29,7 +29,7 @@ The official CQC care directory published by the Care Quality Commission (`cqc.o
 
 ## Quick start
 
-1. Create a free account at [apify.com](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=quickstart) and copy your API token.
+1. Create a free account at [apify.com](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers) and copy your API token.
 2. `export APIFY_TOKEN=...`
 3. Run one of the examples:
 
@@ -55,49 +55,31 @@ Example input ([examples/input.json](examples/input.json)):
 }
 ```
 
-## FAQ
-
-**Which services are covered?**
-Everything registered with CQC in England: care homes, nursing homes, home care, supported living, GPs, dentists, clinics, hospitals and more.
-
-**Does it include CQC ratings?**
-Yes. By default each location gets `overallRating`, `ratingSafe`, `ratingEffective`, `ratingCaring`, `ratingResponsive`, `ratingWellLed` and `ratingPublishedDate` from CQC's monthly Latest ratings file (`ratingsDate` shows its version). Filter with `minRating` (e.g. Good = Good or Outstanding) or `onlyRated`. Locations that have never been rated have null ratings.
-
-**Why do some ratings say Not applicable or Not rated?**
-Those values come straight from CQC, e.g. locations offering several service types no longer get a single location-level rating under CQC's newer approach.
-
-**How fresh is it?**
-CQC republishes the directory regularly and the ratings file monthly; `directoryDate` and `ratingsDate` show the versions used.
-
 ## Use with AI agents (MCP)
 
 Add `https://mcp.apify.com/?actors=devteamdrew/uk-cqc-care-providers` as an MCP server in Claude, Cursor or any MCP client.
 
 ## Pricing
 
-See the [Apify Store page](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=pricing) for current pay-per-result pricing.
-
-## Sample data
-
-Browse real sample rows, download a free CSV sample and see ready-made feeds at [rowsift.co.uk](https://rowsift.co.uk/care-providers/?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=sample-data).
+See the [Apify Store page](https://apify.com/devteamdrew/uk-cqc-care-providers?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers) for current pay-per-result pricing.
 
 ## More data actors
 
-- [Bluesky Scraper – Posts, Profiles & Search](https://apify.com/devteamdrew/bluesky-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [UK Companies House Scraper – Companies & Directors](https://apify.com/devteamdrew/companies-house-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [UK Planning Applications Scraper – 400+ Councils & Postcodes](https://apify.com/devteamdrew/uk-planning-applications?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [Hacker News Scraper – Stories, Comments & Jobs](https://apify.com/devteamdrew/hacker-news-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [npm Package Scraper – Downloads & Dependencies](https://apify.com/devteamdrew/npm-package-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [GitHub Trending Scraper – Repos, Stars & Developers](https://apify.com/devteamdrew/github-trending-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [Mastodon Scraper – Fediverse Hashtags, Accounts & Trends](https://apify.com/devteamdrew/mastodon-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [Lemmy Scraper – Posts, Comments & Communities (Fediverse)](https://apify.com/devteamdrew/lemmy-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [SEC EDGAR Scraper – 10-K, 8-K & Form D Funding Filings](https://apify.com/devteamdrew/sec-edgar-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [arXiv Scraper – Paper Search, Abstracts & Authors](https://apify.com/devteamdrew/arxiv-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [UK Government Tenders Scraper – Contracts Finder, Find a Tender](https://apify.com/devteamdrew/uk-public-tenders?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [SAM.gov Scraper – Federal Contract Opportunities, No API Key](https://apify.com/devteamdrew/sam-gov-opportunities?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [UK Operator Licence Scraper – HGV & Bus Operators (DVSA VOL)](https://apify.com/devteamdrew/uk-operator-licences?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [USAspending Federal Awards Scraper – Contracts & Grants](https://apify.com/devteamdrew/usaspending-awards?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
-- [EU Tenders Scraper – TED Public Procurement Notices](https://apify.com/devteamdrew/eu-ted-tenders?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers&utm_content=more)
+- [Bluesky Scraper – Posts, Profiles & Search](https://apify.com/devteamdrew/bluesky-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [UK Companies House Scraper – Companies & Directors](https://apify.com/devteamdrew/companies-house-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [UK Planning Applications Scraper – 400+ Councils & Postcodes](https://apify.com/devteamdrew/uk-planning-applications?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [Hacker News Scraper – Stories, Comments & Jobs](https://apify.com/devteamdrew/hacker-news-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [npm Package Scraper – Downloads & Dependencies](https://apify.com/devteamdrew/npm-package-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [GitHub Trending Scraper – Repos, Stars & Developers](https://apify.com/devteamdrew/github-trending-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [Mastodon Scraper – Fediverse Hashtags, Accounts & Trends](https://apify.com/devteamdrew/mastodon-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [Lemmy Scraper – Posts, Comments & Communities (Fediverse)](https://apify.com/devteamdrew/lemmy-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [SEC EDGAR Scraper – 10-K, 8-K & Form D Funding Filings](https://apify.com/devteamdrew/sec-edgar-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [arXiv Scraper – Paper Search, Abstracts & Authors](https://apify.com/devteamdrew/arxiv-scraper?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [UK Government Tenders Scraper – Contracts Finder, Find a Tender](https://apify.com/devteamdrew/uk-public-tenders?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [SAM.gov Scraper – Federal Contract Opportunities, No API Key](https://apify.com/devteamdrew/sam-gov-opportunities?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [UK Operator Licence Scraper – HGV & Bus Operators (DVSA VOL)](https://apify.com/devteamdrew/uk-operator-licences?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [USAspending Federal Awards Scraper – Contracts & Grants](https://apify.com/devteamdrew/usaspending-awards?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
+- [EU Tenders Scraper – TED Public Procurement Notices](https://apify.com/devteamdrew/eu-ted-tenders?utm_source=github&utm_medium=readme&utm_campaign=uk-cqc-care-providers)
 
 ## License
 
